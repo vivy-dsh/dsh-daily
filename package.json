@@ -1,0 +1,24 @@
+{
+  "name": "dsh-daily",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DIVA 日常：左栏入口 + 主面板一整页「今天 / 这周 / 记录」。只有界面。",
+  "license": "MIT",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "VENDORED-genui.md"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "inject": [] }
+  }
+}
